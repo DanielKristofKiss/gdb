@@ -1123,8 +1123,8 @@ dwarf2_frame_cache (struct frame_info *this_frame, void **this_cache)
 			      this_frame, 0, 0);
 	  break;
 
-	default:
-	  internal_error (__FILE__, __LINE__, _("Unknown CFA rule."));
+        default:break;
+//	  internal_error (__FILE__, __LINE__, _("Unknown CFA rule."));
 	}
     }
   if (ex.reason < 0)
